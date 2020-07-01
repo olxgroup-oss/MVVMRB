@@ -1,0 +1,6 @@
+framework module MVVMRB {
+  umbrella header "MVVMRB-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "MVVMRB",
+  "version": "0.1.0",
+  "summary": "A short description of MVVMRB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/parmodjakhar1996@gmail.com/MVVMRB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "parmodjakhar1996@gmail.com": "parmod.jhakar@olx.com"
+  },
+  "source": {
+    "git": "https://github.com/parmodjakhar1996@gmail.com/MVVMRB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MVVMRB/Classes/**/*"
+}
