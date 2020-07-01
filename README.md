@@ -22,7 +22,7 @@ pod 'MVVMRB'
 
 ## Author
 
-parmodjakhar1996@gmail.com, parmod.jhakar@olx.com
+parmod.jhakar@olx.com
 
 ## License
 
