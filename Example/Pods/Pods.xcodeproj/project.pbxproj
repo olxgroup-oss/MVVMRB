@@ -13,8 +13,18 @@
 		45BFBC72610A750D08D9939DA63511AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4A960CE4826B6A0468102E7233DBC446 /* Pods-MVVMRB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A569B90ADC00F53387593F52726EED17 /* Pods-MVVMRB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E7BB4A4A6CEA3C798FF2A81629B7AC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AB494C4124BA9A7100D0EE74 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB494C4024BA9A7100D0EE74 /* Buildable.swift */; };
+		AB60D72E24AD931E00D01320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB60D72924AD931D00D01320 /* ViewController.swift */; };
+		AB60D72F24AD931E00D01320 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB60D72A24AD931D00D01320 /* Router.swift */; };
+		AB60D73024AD931E00D01320 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB60D72B24AD931E00D01320 /* Component.swift */; };
+		AB60D73124AD931E00D01320 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB60D72C24AD931E00D01320 /* Builder.swift */; };
+		AB60D73224AD931E00D01320 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB60D72D24AD931E00D01320 /* ViewModel.swift */; };
+		ABD02D8F24BF3A2A001EC5B8 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D8E24BF3A2A001EC5B8 /* Dependency.swift */; };
+		ABD02D9124BF3A5D001EC5B8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9024BF3A5D001EC5B8 /* Routable.swift */; };
+		ABD02D9324BF3B7F001EC5B8 /* ViewControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9224BF3B7F001EC5B8 /* ViewControllable.swift */; };
+		ABD02D9524BF3BE0001EC5B8 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9424BF3BE0001EC5B8 /* ViewControllerProtocol.swift */; };
+		ABD02D9724BF3C35001EC5B8 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9624BF3C35001EC5B8 /* ViewModelable.swift */; };
 		AC0CDCE9975B38B5E1E49674B8F11C08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C1D0BDB4A4B8893E4F987CBFD8A2547D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B5B86C30684E1D8132E115F10AF4B /* ReplaceMe.swift */; };
 		D9ACF9895B9CF1DC9E02B60BB8F11D3B /* Pods-MVVMRB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 121A91DD2B55F1BF1B4B6864C96D4EE6 /* Pods-MVVMRB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6C9DF6D5A0D72FA0405BDEB387183E /* Pods-MVVMRB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A411C41D62B48F961CE4B4E0534B0DD /* Pods-MVVMRB_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -38,12 +48,12 @@
 
 /* Begin PBXFileReference section */
 		121A91DD2B55F1BF1B4B6864C96D4EE6 /* Pods-MVVMRB_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVVMRB_Tests-umbrella.h"; sourceTree = "<group>"; };
-		138F22BF93854DC22543527E63B84023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		138F22BF93854DC22543527E63B84023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		153E0ABD7E88A57A5E820AD446BB7086 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16406762F3C14E1AEA50A04FF84696B6 /* Pods-MVVMRB_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MVVMRB_Tests.modulemap"; sourceTree = "<group>"; };
 		19AA31D23DF55A44FC95F0437E0CB782 /* MVVMRB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MVVMRB.xcconfig; sourceTree = "<group>"; };
 		214AB685781D0DD8A450EF43C4440AAE /* Pods-MVVMRB_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVVMRB_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2563D41720EA668AACDBAA009970CB8B /* Pods-MVVMRB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMRB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2A411C41D62B48F961CE4B4E0534B0DD /* Pods-MVVMRB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVVMRB_Tests-dummy.m"; sourceTree = "<group>"; };
 		2CCC01AFAD52E986D9EB753D80B00036 /* Pods-MVVMRB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMRB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,7 +61,7 @@
 		4231C4E8102928C624D26BDEB55E48EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4304F62F15B23CA86CD5A892681FC9A6 /* Pods-MVVMRB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMRB_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		485FC3BE4325BF31BE10EB4FB819B196 /* MVVMRB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MVVMRB-dummy.m"; sourceTree = "<group>"; };
-		4C454865143667E2028FE59C200CCA40 /* MVVMRB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MVVMRB.framework; path = MVVMRB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C454865143667E2028FE59C200CCA40 /* MVVMRB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVVMRB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		594C3606EFD51C78738DA826A80E8136 /* Pods-MVVMRB_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MVVMRB_Example-dummy.m"; sourceTree = "<group>"; };
 		5EE251162EDF890D58E171709FB73CFB /* Pods-MVVMRB_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMRB_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		684729A38F94784095865BA50C0E2500 /* Pods-MVVMRB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MVVMRB_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,19 +69,29 @@
 		7A30C4F49030FD3F896538CF0CD0E412 /* Pods-MVVMRB_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMRB_Tests-resources.sh"; sourceTree = "<group>"; };
 		7B411CA79D569F3EDA22543D6292FF61 /* MVVMRB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MVVMRB.modulemap; sourceTree = "<group>"; };
 		8C0489DC8D085FF8B997AE95B20742EB /* MVVMRB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MVVMRB-umbrella.h"; sourceTree = "<group>"; };
-		919B5B86C30684E1D8132E115F10AF4B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MVVMRB/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		9D3A4726196E562B13F96BC4453AF589 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D3A4726196E562B13F96BC4453AF589 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D495F3972B50FC4D1825EE93E715C76 /* Pods-MVVMRB_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMRB_Example-resources.sh"; sourceTree = "<group>"; };
 		A32CD31A09ECE54E7921B158EFE44D16 /* Pods-MVVMRB_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVVMRB_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A569B90ADC00F53387593F52726EED17 /* Pods-MVVMRB_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVVMRB_Example-umbrella.h"; sourceTree = "<group>"; };
+		AB494C4024BA9A7100D0EE74 /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		AB60D72924AD931D00D01320 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MVVMRB/Classes/ViewController.swift; sourceTree = "<group>"; };
+		AB60D72A24AD931D00D01320 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = MVVMRB/Classes/Router.swift; sourceTree = "<group>"; };
+		AB60D72B24AD931E00D01320 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Component.swift; path = MVVMRB/Classes/Component.swift; sourceTree = "<group>"; };
+		AB60D72C24AD931E00D01320 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Builder.swift; path = MVVMRB/Classes/Builder.swift; sourceTree = "<group>"; };
+		AB60D72D24AD931E00D01320 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = MVVMRB/Classes/ViewModel.swift; sourceTree = "<group>"; };
+		ABD02D8E24BF3A2A001EC5B8 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		ABD02D9024BF3A5D001EC5B8 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		ABD02D9224BF3B7F001EC5B8 /* ViewControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllable.swift; sourceTree = "<group>"; };
+		ABD02D9424BF3BE0001EC5B8 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		ABD02D9624BF3C35001EC5B8 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		BF88DAF2B6ED2782CCA469D5EE7C0735 /* Pods-MVVMRB_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MVVMRB_Example.modulemap"; sourceTree = "<group>"; };
 		D0E326A551A1F85D9A648F5BEA7CFE0D /* Pods-MVVMRB_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVVMRB_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA809DE1BF7928A0C2170D195C1E262B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF3E4085BEC1AC63B18D353DAA17A62E /* Pods-MVVMRB_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMRB_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E47EAB410190677E41DEC4B6FB57B336 /* Pods_MVVMRB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MVVMRB_Example.framework; path = "Pods-MVVMRB_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47EAB410190677E41DEC4B6FB57B336 /* Pods_MVVMRB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E736A249FFB4D3CC7B87993969997F46 /* Pods-MVVMRB_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MVVMRB_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F048DC1088034D770C0CB70E4F120F48 /* Pods_MVVMRB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MVVMRB_Tests.framework; path = "Pods-MVVMRB_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDD13664C2BB42E24998D40F42AC3628 /* MVVMRB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MVVMRB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F048DC1088034D770C0CB70E4F120F48 /* Pods_MVVMRB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD13664C2BB42E24998D40F42AC3628 /* MVVMRB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MVVMRB.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +173,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		AB494C3F24BA9A3F00D0EE74 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB494C4024BA9A7100D0EE74 /* Buildable.swift */,
+				ABD02D8E24BF3A2A001EC5B8 /* Dependency.swift */,
+				ABD02D9024BF3A5D001EC5B8 /* Routable.swift */,
+				ABD02D9224BF3B7F001EC5B8 /* ViewControllable.swift */,
+				ABD02D9424BF3BE0001EC5B8 /* ViewControllerProtocol.swift */,
+				ABD02D9624BF3C35001EC5B8 /* ViewModelable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +252,12 @@
 		FE82BE948A554B9ACF6C91344B205FD9 /* MVVMRB */ = {
 			isa = PBXGroup;
 			children = (
-				919B5B86C30684E1D8132E115F10AF4B /* ReplaceMe.swift */,
+				AB494C3F24BA9A3F00D0EE74 /* Protocols */,
+				AB60D72C24AD931E00D01320 /* Builder.swift */,
+				AB60D72B24AD931E00D01320 /* Component.swift */,
+				AB60D72A24AD931D00D01320 /* Router.swift */,
+				AB60D72924AD931D00D01320 /* ViewController.swift */,
+				AB60D72D24AD931E00D01320 /* ViewModel.swift */,
 				F169286382AC3530E575BB56EF6EFB53 /* Pod */,
 				056C1FE371AEAFEA111869F2A5066295 /* Support Files */,
 			);
@@ -321,6 +359,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					300BD67F303CFC88F978AE3391423EA9 = {
+						LastSwiftMigration = 1150;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -371,8 +414,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB494C4124BA9A7100D0EE74 /* Buildable.swift in Sources */,
+				ABD02D9324BF3B7F001EC5B8 /* ViewControllable.swift in Sources */,
+				ABD02D9524BF3BE0001EC5B8 /* ViewControllerProtocol.swift in Sources */,
+				AB60D72E24AD931E00D01320 /* ViewController.swift in Sources */,
+				ABD02D8F24BF3A2A001EC5B8 /* Dependency.swift in Sources */,
+				AB60D73024AD931E00D01320 /* Component.swift in Sources */,
+				ABD02D9724BF3C35001EC5B8 /* ViewModelable.swift in Sources */,
+				AB60D72F24AD931E00D01320 /* Router.swift in Sources */,
 				0B0A808CC9ECB308686CF66BAA99D784 /* MVVMRB-dummy.m in Sources */,
-				C1D0BDB4A4B8893E4F987CBFD8A2547D /* ReplaceMe.swift in Sources */,
+				AB60D73224AD931E00D01320 /* ViewModel.swift in Sources */,
+				ABD02D9124BF3A5D001EC5B8 /* Routable.swift in Sources */,
+				AB60D73124AD931E00D01320 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,8 +552,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -510,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19AA31D23DF55A44FC95F0437E0CB782 /* MVVMRB.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -522,14 +575,16 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MVVMRB/MVVMRB-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MVVMRB/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MVVMRB/MVVMRB.modulemap";
 				PRODUCT_MODULE_NAME = MVVMRB;
 				PRODUCT_NAME = MVVMRB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,6 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19AA31D23DF55A44FC95F0437E0CB782 /* MVVMRB.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -686,13 +742,14 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MVVMRB/MVVMRB-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MVVMRB/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MVVMRB/MVVMRB.modulemap";
 				PRODUCT_MODULE_NAME = MVVMRB;
 				PRODUCT_NAME = MVVMRB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

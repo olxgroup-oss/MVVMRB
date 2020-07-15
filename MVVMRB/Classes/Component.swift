@@ -1,38 +1,30 @@
+// This source file is part of the MVVM+RB open source project
 //
-//  Component.swift
-//  Letgo
+// Copyright (c) 2020 Olx India Pvt. Ltd. and the MVVM+RB project authors. All rights reserved.
+// Licensed under Apache License v2.0 with Runtime Library Exception
 //
-//  Created by OLX - Jacob Enzien on 6/28/17.
-//  Copyright © 2017 OLX. All rights reserved.
+// See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-import Foundation
+class Component<DependencyType>: Dependency {
 
-public protocol Dependency {
-    associatedtype DependencyType
-    
-    init (dependency: DependencyType)
-}
+    let dependency: DependencyType
+    var singletons: [ObjectIdentifier: Any] = [:]
 
-open class Component<DependencyType>: Dependency {
-    
-    public let dependency: DependencyType
-    var singletons: [ObjectIdentifier: AnyObject] = [:]
-    
-    public required init(dependency: DependencyType) {
+    required init(dependency: DependencyType) {
         self.dependency = dependency
     }
-    
+
     // MARK: - private
-    public final func shared<SingletonType: AnyObject>(singleton: () -> SingletonType) -> SingletonType {
+    final func shared<SingletonType: Any>(singleton: () -> SingletonType) -> SingletonType {
         let key = ObjectIdentifier(SingletonType.self)
         if let object = singletons[key] as? SingletonType {
             return object
         }
-        
+
         let singletonObject = singleton()
         singletons[key] = singletonObject
-        
+
         return singletonObject
     }
 }

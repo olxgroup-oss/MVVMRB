@@ -1,82 +1,31 @@
+// This source file is part of the MVVM+RB open source project
 //
-//  ViewController.swift
-//  Letgo
+// Copyright (c) 2020 Olx India Pvt. Ltd. and the MVVM+RB project authors. All rights reserved.
+// Licensed under Apache License v2.0 with Runtime Library Exception
 //
-//  Created by OLX - Jacob Enzien on 6/28/17.
-//  Copyright © 2017 OLX. All rights reserved.
+// See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-import Foundation
+class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable, ViewControllerProtocol {
 
-public protocol ViewControllable {
-    var uiViewController: UIViewController { get }
-    func attachChild(viewControllable: ViewControllable)
-    func detachChild(viewControllable: ViewControllable)
-    var closeListener: CloseListener? { get set }
-}
+    // self dependency if any
+    var dependency: DependencyType
+    var viewModel: ViewModelType
+    var router: RouterType
 
-public protocol CloseListener: class {
-    func wasClosed()
-}
-
-extension ViewControllable {
-    //TODO: - Move into concrete class and use UIViewController + extension.
-    public func attachChild(viewControllable: ViewControllable) {
-        uiViewController.addChild(viewControllable.uiViewController)
-        uiViewController.view.addSubview(viewControllable.uiViewController.view)
-    }
-
-    public func detachChild(viewControllable: ViewControllable) {
-        viewControllable.uiViewController.removeFromParent()
-    }
-}
-
-open class ViewController: UIViewController, ViewControllable {
-
-    public weak var closeListener: CloseListener?
-    
-    public var uiViewController: UIViewController {
-        return self
-    }
-    private var wasCloseViewWillDissapear: Bool = false
-
-    public init() {
-        // 0TODO: - Use NibReusable
+    // required pubilc method
+    required init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
+        
+        self.dependency = dependency
+        self.viewModel = viewModel
+        self.router = router
+        
         let nibIdentifier = String(describing: type(of: self))
-        if let _ = Bundle.main.path(forResource: nibIdentifier, ofType: "nib") {
-            super.init(nibName: nibIdentifier, bundle: nil)
-        } else {
-            super.init(nibName: nil, bundle: nil)
-        }
-    }
+        super.init(nibName: nibIdentifier, bundle: Bundle.main)
 
-    required public init?(coder aDecoder: NSCoder) {
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    open override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        if viewControllerWasClosed() {
-            closeListener?.wasClosed()
-        }
-    }
-    
-    /// Determines if the current viewController is being closed or not. (pop or dismiss)
-    ///
-    /// - Returns: True if the viewController is being closed. Otherwise false
-    private func viewControllerWasClosed() -> Bool {
-        var wasClosed: Bool = false
-        
-        if let nav = navigationController, nav.isBeingDismissed || nav.isMovingFromParent {
-            wasClosed = true
-        } else if isMovingFromParent || isBeingDismissed {
-            wasClosed = true
-        }
-        
-        return wasClosed
     }
 }

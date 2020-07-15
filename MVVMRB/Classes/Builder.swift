@@ -1,30 +1,18 @@
+// This source file is part of the MVVM+RB open source project
 //
-//  Builder.swift
-//  Letgo
+// Copyright (c) 2020 Olx India Pvt. Ltd. and the MVVM+RB project authors. All rights reserved.
+// Licensed under Apache License v2.0 with Runtime Library Exception
 //
-//  Created by OLX - Jacob Enzien on 6/28/17.
-//  Copyright © 2017 OLX. All rights reserved.
+// See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-import Foundation
-
-public protocol Buildable {
-    associatedtype BuildType
-    associatedtype DependencyType
-
-    init(dependency: DependencyType)
-    func build() -> BuildType
-}
-
-open class Builder<BuildType, DependencyType>: Buildable {
-
-    public var dependency: DependencyType
-
-    required public init(dependency: DependencyType) {
+class Builder<DependencyType>: Builable {
+    
+    // Parent dependency if any
+    var dependency: DependencyType?
+    
+    // required pubilc method
+    required init(dependency: DependencyType?) {
         self.dependency = dependency
-    }
-
-    open func build() -> BuildType {
-        fatalError("Not Implemented")
     }
 }

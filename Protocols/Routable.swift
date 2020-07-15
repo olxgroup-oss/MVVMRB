@@ -6,10 +6,12 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class ViewModel<DependencyType>: NSObject, ViewModelable {
-    var dependency: DependencyType
+protocol Routable {
+    associatedtype ViewModelType
+    associatedtype DependencyType
     
-    required init(dependency: DependencyType) {
-        self.dependency = dependency
-    }
+    var dependency: DependencyType { get }
+    var viewModel: ViewModelType { get }
+    
+    init(dependency: DependencyType, viewModel: ViewModelType)
 }
