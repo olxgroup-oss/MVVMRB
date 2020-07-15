@@ -27,12 +27,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MVVMRB/Classes/**/*'
+  s.source_files = 'MVVMRB/**/*'
 
   s.swift_version = '5.0'
-  # s.resource_bundles = {
-  #   'MVVMRB' => ['MVVMRB/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
