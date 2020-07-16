@@ -22,7 +22,7 @@ protocol Buildable {
     
     - parameter dependency: The dependency from its parent
      
-    - returns: The builder that holds all the dependency from its parent.
+    - returns: The builder instance
     */
     init(dependency: Dependency?)
 }

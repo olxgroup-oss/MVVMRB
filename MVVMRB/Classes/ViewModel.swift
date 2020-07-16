@@ -10,6 +10,13 @@ open class ViewModel<DependencyType>: NSObject, ViewModelable {
     
     public var dependency: DependencyType
     
+    /**
+    Called to  return view model instance
+    
+    - parameter dependency: The dependency from builder
+     
+    - returns: The view model instance
+    */
     required public init(dependency: DependencyType) {
         self.dependency = dependency
     }

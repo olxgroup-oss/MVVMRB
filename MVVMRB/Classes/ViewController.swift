@@ -8,12 +8,19 @@
 
 open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable, ViewControllerProtocol {
 
-    // self dependency if any
     public var dependency: DependencyType
     public var viewModel: ViewModelType
     public var router: RouterType
-
-    // required pubilc method
+    
+    /**
+    Called to  return view controller instance that holds the view logic
+    
+    - parameter dependency: The dependency from builder
+    - parameter viewModel: The view model instance
+    - parameter router: The router instance
+     
+    - returns: The view controller instance
+    */
     required public init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
         
         self.dependency = dependency
