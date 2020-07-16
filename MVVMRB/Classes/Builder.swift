@@ -6,10 +6,22 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-open class Builder<Dependency>: Builable {
+/// Builder class holds the dependency from its parent
+/// The `Builder` class adopts  `Buildable` protocol  with generic dependency property
+//
+open class Builder<Dependency>: Buildable {
     
+    
+    /// Generic dependency property
     public var dependency: Dependency?
     
+    /**
+    Called to  return builder initialized with optional dependency
+    
+    - parameter dependency: The dependency from its parent
+     
+    - returns: The builder that holds all the dependency from its parent.
+    */
     required public init(dependency: Dependency?) {
         self.dependency = dependency
     }

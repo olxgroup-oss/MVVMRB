@@ -6,12 +6,15 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
+/// The component is an implementation of the Dependency protocol and responsible for owning the dependencies that the builder creates for itself and its children.
 open class Component<DependencyType>: Dependency {
 
     public var dependency: DependencyType
     
     private var _singletons: [ObjectIdentifier: Any] = [:]
-
+    
+    /// initialize component with dependency
+    /// - Parameter dependency: module dependency
     required public init(dependency: DependencyType) {
         self.dependency = dependency
     }

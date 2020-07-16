@@ -13,12 +13,12 @@
 		45BFBC72610A750D08D9939DA63511AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4A960CE4826B6A0468102E7233DBC446 /* Pods-MVVMRB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A569B90ADC00F53387593F52726EED17 /* Pods-MVVMRB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E7BB4A4A6CEA3C798FF2A81629B7AC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		ABD02D9E24BF48A6001EC5B8 /* ViewControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9824BF48A6001EC5B8 /* ViewControllable.swift */; };
-		ABD02D9F24BF48A6001EC5B8 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9924BF48A6001EC5B8 /* Routable.swift */; };
-		ABD02DA024BF48A6001EC5B8 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9A24BF48A6001EC5B8 /* ViewControllerProtocol.swift */; };
-		ABD02DA124BF48A6001EC5B8 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9B24BF48A6001EC5B8 /* Dependency.swift */; };
-		ABD02DA224BF48A6001EC5B8 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9C24BF48A6001EC5B8 /* Buildable.swift */; };
-		ABD02DA324BF48A6001EC5B8 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02D9D24BF48A6001EC5B8 /* ViewModelable.swift */; };
+		AB71496024BFF77600965515 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495A24BFF77500965515 /* ViewModelable.swift */; };
+		AB71496124BFF77600965515 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495B24BFF77600965515 /* ViewControllerProtocol.swift */; };
+		AB71496224BFF77600965515 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495C24BFF77600965515 /* Dependency.swift */; };
+		AB71496324BFF77600965515 /* ViewControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495D24BFF77600965515 /* ViewControllable.swift */; };
+		AB71496424BFF77600965515 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495E24BFF77600965515 /* Buildable.swift */; };
+		AB71496524BFF77600965515 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71495F24BFF77600965515 /* Routable.swift */; };
 		ABD02DA924BF48C4001EC5B8 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02DA424BF48C4001EC5B8 /* Component.swift */; };
 		ABD02DAA24BF48C4001EC5B8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02DA524BF48C4001EC5B8 /* Router.swift */; };
 		ABD02DAB24BF48C4001EC5B8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD02DA624BF48C4001EC5B8 /* Builder.swift */; };
@@ -73,12 +73,12 @@
 		9D495F3972B50FC4D1825EE93E715C76 /* Pods-MVVMRB_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVMRB_Example-resources.sh"; sourceTree = "<group>"; };
 		A32CD31A09ECE54E7921B158EFE44D16 /* Pods-MVVMRB_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MVVMRB_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A569B90ADC00F53387593F52726EED17 /* Pods-MVVMRB_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MVVMRB_Example-umbrella.h"; sourceTree = "<group>"; };
-		ABD02D9824BF48A6001EC5B8 /* ViewControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllable.swift; path = ../MVVMRB/Classes/Protocols/ViewControllable.swift; sourceTree = "<group>"; };
-		ABD02D9924BF48A6001EC5B8 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routable.swift; path = ../MVVMRB/Classes/Protocols/Routable.swift; sourceTree = "<group>"; };
-		ABD02D9A24BF48A6001EC5B8 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerProtocol.swift; path = ../MVVMRB/Classes/Protocols/ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		ABD02D9B24BF48A6001EC5B8 /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dependency.swift; path = ../MVVMRB/Classes/Protocols/Dependency.swift; sourceTree = "<group>"; };
-		ABD02D9C24BF48A6001EC5B8 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Buildable.swift; path = ../MVVMRB/Classes/Protocols/Buildable.swift; sourceTree = "<group>"; };
-		ABD02D9D24BF48A6001EC5B8 /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelable.swift; path = ../MVVMRB/Classes/Protocols/ViewModelable.swift; sourceTree = "<group>"; };
+		AB71495A24BFF77500965515 /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelable.swift; path = MVVMRB/Classes/ViewModelable.swift; sourceTree = "<group>"; };
+		AB71495B24BFF77600965515 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerProtocol.swift; path = MVVMRB/Classes/ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		AB71495C24BFF77600965515 /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dependency.swift; path = MVVMRB/Classes/Dependency.swift; sourceTree = "<group>"; };
+		AB71495D24BFF77600965515 /* ViewControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllable.swift; path = MVVMRB/Classes/ViewControllable.swift; sourceTree = "<group>"; };
+		AB71495E24BFF77600965515 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Buildable.swift; path = MVVMRB/Classes/Buildable.swift; sourceTree = "<group>"; };
+		AB71495F24BFF77600965515 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Routable.swift; path = MVVMRB/Classes/Routable.swift; sourceTree = "<group>"; };
 		ABD02DA424BF48C4001EC5B8 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Component.swift; path = MVVMRB/Classes/Component.swift; sourceTree = "<group>"; };
 		ABD02DA524BF48C4001EC5B8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = MVVMRB/Classes/Router.swift; sourceTree = "<group>"; };
 		ABD02DA624BF48C4001EC5B8 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Builder.swift; path = MVVMRB/Classes/Builder.swift; sourceTree = "<group>"; };
@@ -173,19 +173,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AB494C3F24BA9A3F00D0EE74 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				ABD02D9C24BF48A6001EC5B8 /* Buildable.swift */,
-				ABD02D9B24BF48A6001EC5B8 /* Dependency.swift */,
-				ABD02D9924BF48A6001EC5B8 /* Routable.swift */,
-				ABD02D9824BF48A6001EC5B8 /* ViewControllable.swift */,
-				ABD02D9A24BF48A6001EC5B8 /* ViewControllerProtocol.swift */,
-				ABD02D9D24BF48A6001EC5B8 /* ViewModelable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,12 +239,17 @@
 		FE82BE948A554B9ACF6C91344B205FD9 /* MVVMRB */ = {
 			isa = PBXGroup;
 			children = (
+				AB71495E24BFF77600965515 /* Buildable.swift */,
+				AB71495C24BFF77600965515 /* Dependency.swift */,
+				AB71495F24BFF77600965515 /* Routable.swift */,
+				AB71495D24BFF77600965515 /* ViewControllable.swift */,
+				AB71495B24BFF77600965515 /* ViewControllerProtocol.swift */,
+				AB71495A24BFF77500965515 /* ViewModelable.swift */,
 				ABD02DA624BF48C4001EC5B8 /* Builder.swift */,
 				ABD02DA424BF48C4001EC5B8 /* Component.swift */,
 				ABD02DA524BF48C4001EC5B8 /* Router.swift */,
 				ABD02DA724BF48C4001EC5B8 /* ViewController.swift */,
 				ABD02DA824BF48C4001EC5B8 /* ViewModel.swift */,
-				AB494C3F24BA9A3F00D0EE74 /* Protocols */,
 				F169286382AC3530E575BB56EF6EFB53 /* Pod */,
 				056C1FE371AEAFEA111869F2A5066295 /* Support Files */,
 			);
@@ -414,17 +406,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD02D9E24BF48A6001EC5B8 /* ViewControllable.swift in Sources */,
-				ABD02D9F24BF48A6001EC5B8 /* Routable.swift in Sources */,
-				ABD02DA024BF48A6001EC5B8 /* ViewControllerProtocol.swift in Sources */,
-				ABD02DA124BF48A6001EC5B8 /* Dependency.swift in Sources */,
+				AB71496124BFF77600965515 /* ViewControllerProtocol.swift in Sources */,
+				AB71496324BFF77600965515 /* ViewControllable.swift in Sources */,
 				ABD02DAC24BF48C4001EC5B8 /* ViewController.swift in Sources */,
+				AB71496024BFF77600965515 /* ViewModelable.swift in Sources */,
+				AB71496224BFF77600965515 /* Dependency.swift in Sources */,
 				ABD02DAA24BF48C4001EC5B8 /* Router.swift in Sources */,
-				ABD02DA324BF48A6001EC5B8 /* ViewModelable.swift in Sources */,
 				ABD02DA924BF48C4001EC5B8 /* Component.swift in Sources */,
+				AB71496524BFF77600965515 /* Routable.swift in Sources */,
 				0B0A808CC9ECB308686CF66BAA99D784 /* MVVMRB-dummy.m in Sources */,
-				ABD02DA224BF48A6001EC5B8 /* Buildable.swift in Sources */,
 				ABD02DAD24BF48C4001EC5B8 /* ViewModel.swift in Sources */,
+				AB71496424BFF77600965515 /* Buildable.swift in Sources */,
 				ABD02DAB24BF48C4001EC5B8 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
