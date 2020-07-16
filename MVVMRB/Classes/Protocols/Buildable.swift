@@ -9,9 +9,9 @@
 /// Buildable protocol provides the interface to Builder class
 protocol Builable {
     
-    associatedtype BuilderDependency
+    associatedtype Dependency
     
-    var builderDependency: BuilderDependency? { get }
+    var dependency: Dependency? { get }
     
-    init(builderDependency: BuilderDependency?)
+    init(dependency: Dependency?)
 }
