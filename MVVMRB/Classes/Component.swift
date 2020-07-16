@@ -6,13 +6,13 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class Component<DependencyType>: Dependency {
+open class Component<DependencyType>: Dependency {
 
-    let dependency: DependencyType
+    public var dependency: DependencyType
     
     private var _singletons: [ObjectIdentifier: Any] = [:]
 
-    required init(dependency: DependencyType) {
+    required public init(dependency: DependencyType) {
         self.dependency = dependency
     }
 

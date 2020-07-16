@@ -6,11 +6,11 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class Router<DependencyType, ViewModelType>: NSObject, Routable {
+open class Router<DependencyType, ViewModelType>: NSObject, Routable {
     
     // self dependency if any
-    var dependency: DependencyType
-    var viewModel: ViewModelType
+    public var dependency: DependencyType
+    public var viewModel: ViewModelType
 
     // required pubilc method
     required public init(dependency: DependencyType, viewModel: ViewModelType) {

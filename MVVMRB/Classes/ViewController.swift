@@ -6,15 +6,15 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable, ViewControllerProtocol {
+open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable, ViewControllerProtocol {
 
     // self dependency if any
-    var dependency: DependencyType
-    var viewModel: ViewModelType
-    var router: RouterType
+    public var dependency: DependencyType
+    public var viewModel: ViewModelType
+    public var router: RouterType
 
     // required pubilc method
-    required init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
+    required public init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
         
         self.dependency = dependency
         self.viewModel = viewModel
@@ -25,7 +25,7 @@ class ViewController<DependencyType, ViewModelType, RouterType>: UIViewControlle
 
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

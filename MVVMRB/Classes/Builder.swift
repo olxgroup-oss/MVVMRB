@@ -6,11 +6,11 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class Builder<Dependency>: Builable {
+open class Builder<Dependency>: Builable {
     
-    var dependency: Dependency?
+    public var dependency: Dependency?
     
-    required init(dependency: Dependency?) {
+    required public init(dependency: Dependency?) {
         self.dependency = dependency
     }
 }

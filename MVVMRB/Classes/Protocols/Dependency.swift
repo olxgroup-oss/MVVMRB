@@ -10,6 +10,8 @@ protocol Dependency {
     
     associatedtype DependencyType
     
+    var dependency: DependencyType { get set }
+    
     init (dependency: DependencyType)
 }
 
