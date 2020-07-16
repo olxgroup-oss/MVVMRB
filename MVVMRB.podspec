@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MVVMRB'
-  s.version          = '0.2.0'
-  s.summary          = 'A short description of MVVMRB.'
+  s.version          = '0.2.1'
+  s.summary          = 'MVVM+RB - Adaption of the MVVM design pattern in a better way.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
