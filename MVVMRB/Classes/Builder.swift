@@ -6,8 +6,11 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-protocol Dependency {
-    associatedtype DependencyType
-    init (dependency: DependencyType)
+class Builder<BuilderDependency>: Builable {
+    
+    var builderDependency: BuilderDependency?
+    
+    required init(dependency: BuilderDependency?) {
+        self.builderDependency = builderDependency
+    }
 }
-

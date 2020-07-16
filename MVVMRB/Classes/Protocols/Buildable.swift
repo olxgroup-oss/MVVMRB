@@ -6,13 +6,12 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-class Builder<DependencyType>: Builable {
+/// Buildable protocol provides the interface to Builder class
+protocol Builable {
     
-    // Parent dependency if any
-    var dependency: DependencyType?
+    associatedtype BuilderDependency
     
-    // required pubilc method
-    required init(dependency: DependencyType?) {
-        self.dependency = dependency
-    }
+    var builderDependency: BuilderDependency? { get }
+    
+    init(builderDependency: BuilderDependency?)
 }

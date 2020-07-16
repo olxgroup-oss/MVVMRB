@@ -9,21 +9,21 @@
 class Component<DependencyType>: Dependency {
 
     let dependency: DependencyType
-    var singletons: [ObjectIdentifier: Any] = [:]
+    
+    private var _singletons: [ObjectIdentifier: Any] = [:]
 
     required init(dependency: DependencyType) {
         self.dependency = dependency
     }
 
-    // MARK: - private
     final func shared<SingletonType: Any>(singleton: () -> SingletonType) -> SingletonType {
         let key = ObjectIdentifier(SingletonType.self)
-        if let object = singletons[key] as? SingletonType {
+        if let object = _singletons[key] as? SingletonType {
             return object
         }
 
         let singletonObject = singleton()
-        singletons[key] = singletonObject
+        _singletons[key] = singletonObject
 
         return singletonObject
     }
