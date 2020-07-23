@@ -1,21 +1,11 @@
 # MVVMRB
+MVVM+RB — What’s The RB & Why needed?
+The RB stands for “Router & Builder”. The group of classes representing one screen in MVVM+RB is composed of the Model, View, ViewModel, Router, and Builder.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+![](Flow Diagram.png)
 
 ## Installation
 
 ```ruby
 pod 'MVVMRB'
 ```
-
-## Author
-
-parmod.jhakar@olx.com
-
-## License
-
-MVVMRB is available under the MIT license. See the LICENSE file for more info.
