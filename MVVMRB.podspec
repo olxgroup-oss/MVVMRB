@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MVVMRB'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'MVVM+RB - Adaption of the MVVM design pattern in a better way.'
 
 # This description is used to generate tags and improve search results.
