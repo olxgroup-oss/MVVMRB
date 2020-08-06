@@ -1,0 +1,14 @@
+//___FILEHEADER___
+
+import Foundation
+import UIKit
+import MVVMRB
+
+protocol ___VARIABLE_productName:identifier___ViewControllerDependencyProtocol {
+}
+
+protocol ___VARIABLE_productName:identifier___ViewControllerProtocol{
+}
+
+class ___VARIABLE_productName:identifier___ViewController: ViewController<___VARIABLE_productName:identifier___ViewControllerDependencyProtocol, ___VARIABLE_productName:identifier___ViewModelProtocol, ___VARIABLE_productName:identifier___RouterProtocol>, ___VARIABLE_productName:identifier___ViewControllerProtocol {
+}
