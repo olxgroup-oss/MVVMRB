@@ -6,12 +6,16 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-protocol Dependency {
-    
-    associatedtype DependencyType
-    
-    var dependency: DependencyType { get set }
-    
-    init (dependency: DependencyType)
+import Foundation
+
+protocol ListDependencyProtocol {
+    var data: [String] { get }
 }
 
+class ListDependency: ListDependencyProtocol {
+    let data: [String]
+    
+    init(data: [String]) {
+        self.data = data
+    }
+}

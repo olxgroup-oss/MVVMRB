@@ -13,8 +13,8 @@ open class Component<DependencyType>: Dependency {
     
     private var _singletons: [ObjectIdentifier: Any] = [:]
     
-    /// initialize component with dependency
-    /// - Parameter dependency: module dependency
+    /// Initializer.
+    /// - Parameter dependency: The dependency used for this module
     required public init(dependency: DependencyType) {
         self.dependency = dependency
     }

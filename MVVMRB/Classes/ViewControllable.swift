@@ -6,11 +6,8 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-// MARK: Protocol Definition
-
-/// The `ViewControllable` protocol is adopted by `ViewController` class:
-//
-protocol ViewControllable {
+/// Basic interface between a `Router` and the UIKit `UIViewController`.
+public protocol ViewControllable {
     associatedtype DependencyType
     associatedtype ViewModelType
     associatedtype RouterType
@@ -18,15 +15,10 @@ protocol ViewControllable {
     var dependency: DependencyType { get set }
     var viewModel: ViewModelType { get set }
     var router: RouterType { get set }
-    
-    /**
-    Called to  return view controller instance that holds the view logic
-    
-    - parameter dependency: The dependency from builder
-    - parameter viewModel: The view model instance
-    - parameter router: The router instance
-     
-    - returns: The view controller instance
-    */
+    /// Initializer.
+    /// - Parameters:
+    ///   - dependency: The dependency used for this viewcontroller
+    ///   - viewModel: The viewModel responsible to implement business logic of MVVMRB module
+    ///   - router: The router responsible to implement routing logic of MVVMRB module
     init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType)
 }

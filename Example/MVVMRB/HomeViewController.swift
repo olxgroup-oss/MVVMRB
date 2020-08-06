@@ -10,15 +10,31 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    private var listBuilder: ListBuilder?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        listBuilder = ListBuilder(dependency: ListDependency(data: getListData()))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func getListData() -> [String] {
+        var numbers: [String] = []
+        for number in 0...100 {
+            let numberValue = NSNumber(value: number)
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .spellOut
+            if let numberAsWord: String = formatter.string(from: numberValue) {
+                numbers.append("\(number)           \(numberAsWord)")
+            }
+        }
+        return numbers
     }
-
+    
+    @IBAction func showListAction(_ sender: Any) {
+        if let viewController: UIViewController = listBuilder?.build() as? UIViewController {
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }
+
 

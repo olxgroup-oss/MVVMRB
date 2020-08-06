@@ -6,22 +6,14 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-/// Builder class holds the dependency from its parent
-/// The `Builder` class adopts  `Buildable` protocol  with generic dependency property
-//
+/// Utility that instantiates a MVVMRB module and sets up its internal  dependencies, wirings.
 open class Builder<Dependency>: Buildable {
     
+    /// The dependency used for this builder to build the MVVMRB.
+    public let dependency: Dependency?
     
-    /// Generic dependency property
-    public var dependency: Dependency?
-    
-    /**
-    Called to  return builder initialized with optional dependency
-    
-    - parameter dependency: The dependency from its parent
-     
-    - returns: The builder that holds all the dependency from its parent.
-    */
+    /// Initializer.
+    /// - Parameter dependency: The dependency used for this builder to build the MVVMRB.
     required public init(dependency: Dependency?) {
         self.dependency = dependency
     }

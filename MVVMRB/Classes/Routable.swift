@@ -6,26 +6,19 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-// MARK: Protocol Definition
-
-/// The `Routable` protocol is adopted by `Router` class with generic types:
-///  * `ViewModelType` viewmodel
-///  * `DependencyType` dependency from `Builder`
-//
+/// The base protocol for all routers.
 protocol Routable {
     associatedtype ViewModelType
     associatedtype DependencyType
     
+    /// Dependency associated with this `Router`.
     var dependency: DependencyType { get }
+    /// The base viewmodel associated with this `Router`.
     var viewModel: ViewModelType { get }
     
-    /**
-    Called to  return router instance initialized with dependency and viewmodel
-    
-    - parameter dependency: The dependency passed by  builder
-    - parameter viewModel: The view model of the module
-     
-    - returns: The router that holds dependency and viewmodel instances
-    */
+    /// Initializer.
+    /// - Parameters:
+    ///   - dependency: The dependency used for this router
+    ///   - viewModel: The view model of module which defines a unit of  business logic.
     init(dependency: DependencyType, viewModel: ViewModelType)
 }

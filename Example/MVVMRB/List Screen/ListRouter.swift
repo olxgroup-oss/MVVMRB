@@ -6,12 +6,13 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-protocol Dependency {
-    
-    associatedtype DependencyType
-    
-    var dependency: DependencyType { get set }
-    
-    init (dependency: DependencyType)
+import MVVMRB
+
+protocol ListRouterDependencyProtocol {
 }
 
+protocol ListRouterProtocol {
+}
+
+class ListRouter: Router<ListRouterDependencyProtocol, ListViewModelProtocol>, ListRouterProtocol {
+}

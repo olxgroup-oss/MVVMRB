@@ -9,17 +9,13 @@
 // Router class is responsible for routing
 open class Router<DependencyType, ViewModelType>: NSObject, Routable {
     
-    public var dependency: DependencyType
-    public var viewModel: ViewModelType
+    public let dependency: DependencyType
+    public let viewModel: ViewModelType
 
-    /**
-    Called to  return router instance initialized with dependency and viewmodel
-    
-    - parameter dependency: The dependency passed by  builder
-    - parameter viewModel: The view model of the module
-     
-    - returns: The router that holds dependency and viewmodel instances
-    */
+    /// Initializer.
+    /// - Parameters:
+    ///   - dependency: The dependency used for this router
+    ///   - viewModel: The view model of module which defines a unit of  business logic.
     required public init(dependency: DependencyType, viewModel: ViewModelType) {
         self.dependency = dependency
         self.viewModel = viewModel

@@ -6,21 +6,20 @@
 // See https://git.naspersclassifieds.com/infrastructure/strategy_team/olxgroup-oss/-/blob/master/projects/mvvm-rb-ios/metadata.md for the list of Swift project authors
 //
 
-open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable, ViewControllerProtocol {
+import UIKit
+
+/// Basic interface between a `Router` and the UIKit `UIViewController`.
+open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewController, ViewControllable {
 
     public var dependency: DependencyType
     public var viewModel: ViewModelType
     public var router: RouterType
     
-    /**
-    Called to  return view controller instance that holds the view logic
-    
-    - parameter dependency: The dependency from builder
-    - parameter viewModel: The view model instance
-    - parameter router: The router instance
-     
-    - returns: The view controller instance
-    */
+    /// Initializer.
+    /// - Parameters:
+    ///   - dependency: The dependency used for this viewcontroller
+    ///   - viewModel: The view model of module which defines a unit of  business logic.
+    ///   - router: The router responsible to implement routing logic of MVVMRB module
     required public init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
         
         self.dependency = dependency

@@ -13,6 +13,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AB8C815D24DBA11C00F89457 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C815824DBA11C00F89457 /* ListRouter.swift */; };
+		AB8C815E24DBA11C00F89457 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C815924DBA11C00F89457 /* ListViewController.swift */; };
+		AB8C815F24DBA11C00F89457 /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C815A24DBA11C00F89457 /* ListBuilder.swift */; };
+		AB8C816024DBA11C00F89457 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C815B24DBA11C00F89457 /* ListViewModel.swift */; };
+		AB8C816124DBA11C00F89457 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8C815C24DBA11C00F89457 /* ListViewController.xib */; };
+		AB8C816324DBAE7200F89457 /* ListDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8C816224DBAE7200F89457 /* ListDependency.swift */; };
 		C0A05740C9609B9AF69DADAD /* Pods_MVVMRB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777542513EC8AF63098A540D /* Pods_MVVMRB_Example.framework */; };
 		FED0770A592C2193F19C1904 /* Pods_MVVMRB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38ECAF4BB403F2575D48C511 /* Pods_MVVMRB_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +52,12 @@
 		897D0A67C89B6BE99DA02AD9 /* Pods-MVVMRB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRB_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		904A219C79300ED84541B911 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		95353DCD710578BB2E880BB3 /* MVVMRB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MVVMRB.podspec; path = ../MVVMRB.podspec; sourceTree = "<group>"; };
+		AB8C815824DBA11C00F89457 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		AB8C815924DBA11C00F89457 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AB8C815A24DBA11C00F89457 /* ListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
+		AB8C815B24DBA11C00F89457 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		AB8C815C24DBA11C00F89457 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		AB8C816224DBAE7200F89457 /* ListDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDependency.swift; sourceTree = "<group>"; };
 		F5C44F19D3A5CC7ADF28B09B /* Pods-MVVMRB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRB_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMRB_Example/Pods-MVVMRB_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,8 +105,9 @@
 		607FACD21AFB9204008FA782 /* Example for MVVMRB */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* HomeViewController.swift */,
+				AB8C814324DB9E0000F89457 /* List Screen */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -146,6 +159,19 @@
 				38ECAF4BB403F2575D48C511 /* Pods_MVVMRB_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB8C814324DB9E0000F89457 /* List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AB8C815824DBA11C00F89457 /* ListRouter.swift */,
+				AB8C815924DBA11C00F89457 /* ListViewController.swift */,
+				AB8C815A24DBA11C00F89457 /* ListBuilder.swift */,
+				AB8C815B24DBA11C00F89457 /* ListViewModel.swift */,
+				AB8C815C24DBA11C00F89457 /* ListViewController.xib */,
+				AB8C816224DBAE7200F89457 /* ListDependency.swift */,
+			);
+			path = "List Screen";
 			sourceTree = "<group>";
 		};
 		FB41B98619B8E263EFA88239 /* Pods */ = {
@@ -248,6 +274,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				AB8C816124DBA11C00F89457 /* ListViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8C815D24DBA11C00F89457 /* ListRouter.swift in Sources */,
+				AB8C815F24DBA11C00F89457 /* ListBuilder.swift in Sources */,
+				AB8C816024DBA11C00F89457 /* ListViewModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
+				AB8C815E24DBA11C00F89457 /* ListViewController.swift in Sources */,
+				AB8C816324DBAE7200F89457 /* ListDependency.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
