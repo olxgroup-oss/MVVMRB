@@ -20,14 +20,14 @@ open class ViewController<DependencyType, ViewModelType, RouterType>: UIViewCont
     ///   - dependency: The dependency used for this viewcontroller
     ///   - viewModel: The view model of module which defines a unit of  business logic.
     ///   - router: The router responsible to implement routing logic of MVVMRB module
-    required public init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType) {
+    required public init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType, bundle: Bundle = Bundle.main) {
         
         self.dependency = dependency
         self.viewModel = viewModel
         self.router = router
         
         let nibIdentifier = String(describing: type(of: self))
-        super.init(nibName: nibIdentifier, bundle: Bundle.main)
+        super.init(nibName: nibIdentifier, bundle: bundle)
 
     }
     
