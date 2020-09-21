@@ -13,7 +13,7 @@
 /// active.
 ///
 /// An `Interactor` should only perform its business logic when it's currently active.
-open class ViewModel<DependencyType>: ViewModelable {
+open class ViewModel<DependencyType>: NSObject, ViewModelable {
     
     public let dependency: DependencyType
 

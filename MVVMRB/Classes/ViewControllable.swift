@@ -20,5 +20,5 @@ public protocol ViewControllable {
     ///   - dependency: The dependency used for this viewcontroller
     ///   - viewModel: The viewModel responsible to implement business logic of MVVMRB module
     ///   - router: The router responsible to implement routing logic of MVVMRB module
-    init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType, bundle: Bundle)
+    init(dependency: DependencyType, viewModel: ViewModelType, router: RouterType, bundle: Bundle?)
 }

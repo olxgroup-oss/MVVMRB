@@ -7,7 +7,7 @@
 //
 
 /// The base protocol for all routers.
-protocol Routable {
+public protocol Routable {
     associatedtype ViewModelType
     associatedtype DependencyType
     

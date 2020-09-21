@@ -7,7 +7,7 @@
 //
 
 /// The base builder protocol that all builders should conform to.
-protocol Buildable {
+public protocol Buildable {
     
     associatedtype Dependency
     

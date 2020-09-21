@@ -7,7 +7,7 @@
 //
 
 /// The `ViewModelable` protocol is adopted by `ViewModel` class:
-protocol ViewModelable {
+protocol ViewModelable: NSObject {
     
     associatedtype DependencyType
     
